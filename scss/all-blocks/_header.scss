@@ -1,0 +1,77 @@
+.header {
+     padding: 30px 0px;
+     .header__box {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+     }
+
+     .header__box-left {
+          display: flex;
+          align-items: center;
+     }
+
+     .header__logo-link {
+          color: #fff;
+          font-size: 30px;
+          font-weight: 600;
+          text-decoration: none;
+     }
+
+     .header__logo-text {
+          color: dodgerblue;
+          transition: color 0.5s;
+     }
+
+     .header__logo-text:hover {
+          color: rgba(255, 0, 0, 0.815);
+     }
+
+     .header__nav {
+          margin-left: 100px;
+     }
+
+     .header__list {
+          display: flex;
+          margin: 0;
+          padding: 0;
+          list-style: none;
+     }
+
+     .header__item + .header__item {
+          margin-left: 60px;
+     }
+
+     .header__link {
+          color: #fff;
+          font-size: 16px;
+          font-weight: 500;
+          text-decoration: none;
+          transition: 0.5s;
+     }
+
+     .header__link:hover {
+          color: dodgerblue;
+     }
+
+     .header__link:active {
+          opacity: 0.6;
+     }
+
+     .header__sing {
+          position: relative;
+          margin-right: 40px;
+     }
+
+     .header__sing::after {
+          position: absolute;
+          content: '';
+          right: -30px;
+          width: 25px;
+          height: 25px;
+          color: dodgerblue;
+          background-image: url('../../img/enter-outline1.svg');
+          background-repeat: no-repeat;
+          background-size: contain;
+     }
+}

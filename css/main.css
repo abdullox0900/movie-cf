@@ -1,3 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+:root {
+  --live-indicator-shadow: hsla(0, 79%, 63%, 0.5);
+  --rich-black-fogra-30: hsl(219, 32%, 10%);
+  --rich-black-fogra-29: hsl(222, 25%, 10%);
+  --live-indicator: hsl(0, 79%, 63%);
+  --oxford-blue-50: hsla(218, 39%, 14%, 0.8);
+  --oxford-blue: hsl(218, 39%, 14%);
+  --light-azure: hsl(214, 84%, 56%);
+  --off-white: hsl(0, 0%, 88%);
+  --yellow: hsl(45, 100%, 54%);
+  --white: hsl(0, 0%, 100%);
+  --azure: hsl(211, 100%, 50%);
+  --ff-inter: 'Inter', sans-serif;
+  --section-heading: 40px;
+  --fs-lg: 22px;
+  --fs-md: 17px;
+  --fs-sm: 14px;
+  --fs-x-sm: 12px;
+  --fw-7: 700;
+  --fw-6: 600;
+  --fw-5: 500;
+  --px: 120px;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -353,6 +378,8 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 body {
@@ -363,10 +390,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 0;
+  padding: 0;
   height: 100%;
-  font-family: "Arial", sans-serif;
+  font-family: 'Arial', sans-serif;
   font-size: 16px;
   line-height: 1.5;
+  background-color: #131720;
 }
 
 img {
@@ -384,5 +414,128 @@ img {
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
+}
+
+.header {
+  padding: 30px 0px;
+}
+
+.header .header__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .header__box-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header__logo-link {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.header .header__logo-text {
+  color: dodgerblue;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.header .header__logo-text:hover {
+  color: rgba(255, 0, 0, 0.815);
+}
+
+.header .header__nav {
+  margin-left: 100px;
+}
+
+.header .header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header .header__item + .header__item {
+  margin-left: 60px;
+}
+
+.header .header__link {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header .header__link:hover {
+  color: dodgerblue;
+}
+
+.header .header__link:active {
+  opacity: 0.6;
+}
+
+.header .header__sing {
+  position: relative;
+  margin-right: 40px;
+}
+
+.header .header__sing::after {
+  position: absolute;
+  content: '';
+  right: -30px;
+  width: 25px;
+  height: 25px;
+  color: dodgerblue;
+  background-image: url("../../img/enter-outline1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.container {
+  max-width: 1152px;
+  margin: 0px auto;
+  padding: 0px 20px;
+}
+
+.hero .hero__wrap {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.hero .hero__wrap:hover .hero__img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.hero .hero__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-position: top;
+     object-position: top;
+  pointer-events: none;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=main.css.map */

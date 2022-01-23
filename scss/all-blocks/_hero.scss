@@ -1,0 +1,22 @@
+.hero {
+     .hero__wrap {
+          position: relative;
+          height: 400px;
+          overflow: hidden;
+          cursor: pointer;
+          border-radius: 20px;
+     }
+
+     .hero__wrap:hover .hero__img {
+          transform: scale(1.1);
+     }
+
+     .hero__img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-position: top;
+          pointer-events: none;
+          object-fit: cover;
+     }
+}
