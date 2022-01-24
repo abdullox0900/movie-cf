@@ -1,4 +1,5 @@
 .hero {
+     padding-bottom: 55px;
      .hero__wrap {
           position: relative;
           height: 400px;
@@ -18,5 +19,64 @@
           object-position: top;
           pointer-events: none;
           object-fit: cover;
+     }
+
+     .hero__containt {
+          position: absolute;
+          right: 80px;
+          bottom: 60px;
+          left: 80px;
+     }
+
+     .hero-info {
+          position: relative;
+          margin-left: 35px;
+          color: #fff;
+          font-size: 18px;
+          font-weight: 600;
+     }
+
+     .hero-info + .hero-info {
+          margin-left: 50px;
+     }
+
+     .hero-info::before {
+          position: absolute;
+          content: '';
+          width: 25px;
+          height: 25px;
+          background-size: contain;
+     }
+
+     .hero-info:nth-last-child(3)::before {
+          left: -30px;
+          background-image: url('../../img/movie_icon.svg');
+     }
+
+     .hero-info:nth-last-child(2)::before {
+          left: -30px;
+          background-image: url('../../img/calendar-outline.svg');
+     }
+
+     .hero-info:nth-last-child(1)::before {
+          left: -30px;
+          background-image: url('../../img/time-outline.svg');
+     }
+
+     .hero-info:nth-last-child(1)::after {
+          content: '4K';
+          font-size: 16px;
+          padding: 4px;
+          margin-left: 15px;
+          border-radius: 5px;
+          background-color: dodgerblue;
+     }
+
+     .hero__header {
+          margin: 0;
+          margin-top: 10px;
+          font-size: 50px;
+          color: #fff;
+          text-shadow: 2px 0 2px #0007;
      }
 }
