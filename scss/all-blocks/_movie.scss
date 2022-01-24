@@ -3,10 +3,10 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
-          background: rgb(22, 32, 50);
           padding: 20px 30px;
           border-radius: 20px;
           margin-bottom: 30px;
+          background: rgb(22, 32, 50);
      }
 
      .movie__filter-bar select {
@@ -26,13 +26,13 @@
      }
 
      .movie__filter-bar .form__input {
-          background: #131720;
           width: 100%;
           padding: 12px 35px 12px 20px;
           border-radius: 15px;
           color: #fff;
           font-size: 14px;
           font-weight: 500;
+          background: #131720;
      }
 
      .form__btn {
@@ -48,9 +48,9 @@
 
      .movie__filter-radios {
           position: relative;
-          background: #131720;
           padding: 10px;
           border-radius: 15px;
+          background: #131720;
      }
 
      .movie__filter-radios input {
@@ -72,13 +72,13 @@
      }
 
      .movie__filter-radios input ~ .checked-radio-bg {
-          background: rgb(22, 32, 50);
           position: absolute;
           top: 5px;
           left: 7px;
           bottom: 5px;
           width: 81px;
           border-radius: 10px;
+          background: rgb(22, 32, 50);
      }
 
      #popular:checked ~ .checked-radio-bg {
@@ -92,10 +92,17 @@
      }
 
      .movie__list {
-          display: flex;
-          margin: 0;
-          padding: 0;
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+          gap: 30px;
+          margin-bottom: 60px;
+          margin: 0px;
+          padding: 0px;
           list-style: none;
+     }
+
+     .movie__item {
+          margin: 0px;
      }
 
      .movie__card {
@@ -144,32 +151,37 @@
           position: absolute;
           padding: 5px;
           border-radius: 10px;
-          color: var(--light-azure);
+          color: rgb(49, 130, 237);
           transform: scale(var(--scale));
      }
 
      .bookmark {
           top: 13px;
           left: 13px;
+          width: 28px;
+          height: 28px;
           background-color: #131720;
-     }
-
-     .bookmark-icon {
-          font-size: 17px;
+          background-image: url('../../img/bookmark1-outline.svg');
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: 18px;
      }
 
      .rating {
+          // padding-left: 20px;
           top: 13px;
           right: 13px;
+          width: 50px;
+          height: 28px;
           background-color: #131720;
-     }
-
-     .reting-icon {
-          font-size: 17px;
+          background-image: url('../../img/star-icon.svg');
+          background-position: 4px 7px;
+          background-repeat: no-repeat;
+          background-size: 14px;
      }
 
      .movie__rating {
-          margin-left: 4px;
+          margin-left: 15px;
           color: #fff;
           font-weight: 500;
           font-size: 13px;
@@ -179,15 +191,29 @@
           position: absolute;
           top: 50%;
           left: 50%;
+          width: 60px;
+          height: 60px;
+          background-image: url('../../img/play.svg');
+          background-repeat: no-repeat;
+          background-size: 60px;
           transform: translate(-50%, -50%) scale(var(--scale));
-     }
-
-     .play-icon {
-          font-size: 60px;
-          color: #fff;
      }
 
      .movie__card:hover :is(.bookmark, .rating, .play) {
           --scale: 1;
+     }
+
+     .movie__card-title {
+          margin: 0;
+          color: #fff;
+     }
+
+     .movie__card:hover .movie__card-title {
+          color: hsl(214, 84%, 56%);
+     }
+
+     .movie__card-info {
+          width: 50px;
+          color: rgba(255, 255, 255, 0.4);
      }
 }

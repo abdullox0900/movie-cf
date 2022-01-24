@@ -632,10 +632,10 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #162032;
   padding: 20px 30px;
   border-radius: 20px;
   margin-bottom: 30px;
+  background: #162032;
 }
 
 .movie .movie__filter-bar select {
@@ -657,13 +657,13 @@ button {
 }
 
 .movie .movie__filter-bar .form__input {
-  background: #131720;
   width: 100%;
   padding: 12px 35px 12px 20px;
   border-radius: 15px;
   color: #fff;
   font-size: 14px;
   font-weight: 500;
+  background: #131720;
 }
 
 .movie .form__btn {
@@ -679,9 +679,9 @@ button {
 
 .movie .movie__filter-radios {
   position: relative;
-  background: #131720;
   padding: 10px;
   border-radius: 15px;
+  background: #131720;
 }
 
 .movie .movie__filter-radios input {
@@ -706,13 +706,13 @@ button {
 }
 
 .movie .movie__filter-radios input ~ .checked-radio-bg {
-  background: #162032;
   position: absolute;
   top: 5px;
   left: 7px;
   bottom: 5px;
   width: 81px;
   border-radius: 10px;
+  background: #162032;
 }
 
 .movie #popular:checked ~ .checked-radio-bg {
@@ -726,12 +726,19 @@ button {
 }
 
 .movie .movie__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0;
-  padding: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(140px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+  margin: 0px;
+  padding: 0px;
   list-style: none;
+}
+
+.movie .movie__item {
+  margin: 0px;
 }
 
 .movie .movie__card {
@@ -790,7 +797,7 @@ button {
   position: absolute;
   padding: 5px;
   border-radius: 10px;
-  color: var(--light-azure);
+  color: #3182ed;
   -webkit-transform: scale(var(--scale));
           transform: scale(var(--scale));
 }
@@ -798,25 +805,29 @@ button {
 .movie .bookmark {
   top: 13px;
   left: 13px;
+  width: 28px;
+  height: 28px;
   background-color: #131720;
-}
-
-.movie .bookmark-icon {
-  font-size: 17px;
+  background-image: url("../../img/bookmark1-outline.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 18px;
 }
 
 .movie .rating {
   top: 13px;
   right: 13px;
+  width: 50px;
+  height: 28px;
   background-color: #131720;
-}
-
-.movie .reting-icon {
-  font-size: 17px;
+  background-image: url("../../img/star-icon.svg");
+  background-position: 4px 7px;
+  background-repeat: no-repeat;
+  background-size: 14px;
 }
 
 .movie .movie__rating {
-  margin-left: 4px;
+  margin-left: 15px;
   color: #fff;
   font-weight: 500;
   font-size: 13px;
@@ -826,16 +837,30 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 60px;
+  height: 60px;
+  background-image: url("../../img/play.svg");
+  background-repeat: no-repeat;
+  background-size: 60px;
   -webkit-transform: translate(-50%, -50%) scale(var(--scale));
           transform: translate(-50%, -50%) scale(var(--scale));
 }
 
-.movie .play-icon {
-  font-size: 60px;
+.movie .movie__card:hover :is(.bookmark, .rating, .play) {
+  --scale: 1;
+}
+
+.movie .movie__card-title {
+  margin: 0;
   color: #fff;
 }
 
-.movie .movie__card:hover :is(.bookmark, .rating, .play) {
-  --scale: 1;
+.movie .movie__card:hover .movie__card-title {
+  color: #3182ed;
+}
+
+.movie .movie__card-info {
+  width: 50px;
+  color: rgba(255, 255, 255, 0.4);
 }
 /*# sourceMappingURL=main.css.map */

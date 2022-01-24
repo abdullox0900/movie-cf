@@ -1,6 +1,7 @@
 let films = [
    {
       id: "287947",
+      reting: 0.9,
       title: "Shazam!",
       poster: "https://image.tmdb.org/t/p/w500/xnopI5Xtky18MPhK40cZAGAOVeV.jpg",
       overview:
@@ -10,6 +11,7 @@ let films = [
    },
    {
       id: "299537",
+      reting: 1.1,
       title: "Captain Marvel",
       poster: "https://image.tmdb.org/t/p/w500/AtsgWhDnHTq68L0lLsUrCnM7TjG.jpg",
       overview:
@@ -19,6 +21,7 @@ let films = [
    },
    {
       id: "522681",
+      reting: 0.7,
       title: "Escape Room",
       poster: "https://image.tmdb.org/t/p/w500/8Ls1tZ6qjGzfGHjBB7ihOnf7f0b.jpg",
       overview:
@@ -28,6 +31,7 @@ let films = [
    },
    {
       id: "166428",
+      reting: 0.7,
       title: "How to Train Your Dragon: The Hidden World",
       poster: "https://image.tmdb.org/t/p/w500/xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
       overview:
@@ -37,6 +41,7 @@ let films = [
    },
    {
       id: "450465",
+      reting: 0.4,
       title: "Glass",
       poster: "https://image.tmdb.org/t/p/w500/svIDTNUoajS8dLEo7EosxvyAsgJ.jpg",
       overview:
@@ -46,6 +51,7 @@ let films = [
    },
    {
       id: "495925",
+      reting: 0.8,
       title: "Doraemon the Movie: Nobita's Treasure Island",
       poster: "https://image.tmdb.org/t/p/w500/xiLRClQmKSVAbiu6rgCRzNQjcSX.jpg",
       overview:
@@ -55,6 +61,7 @@ let films = [
    },
    {
       id: "329996",
+      reting: 0.5,
       title: "Dumbo",
       poster: "https://image.tmdb.org/t/p/w500/deTOAcMWuHTjOUPQphwcPFFfTQz.jpg",
       overview:
@@ -64,6 +71,7 @@ let films = [
    },
    {
       id: "299536",
+      reting: 0.9,
       title: "Avengers: Infinity War",
       poster: "https://image.tmdb.org/t/p/w500/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
       overview:
@@ -73,6 +81,7 @@ let films = [
    },
    {
       id: "458723",
+      reting: 1.0,
       title: "Us",
       poster: "https://image.tmdb.org/t/p/w500/ux2dU1jQ2ACIMShzB3yP93Udpzc.jpg",
       overview:
@@ -82,6 +91,7 @@ let films = [
    },
    {
       id: "424783",
+      reting: 0.7,
       title: "Bumblebee",
       poster: "https://image.tmdb.org/t/p/w500/fw02ONlDhrYjTSZV8XO6hhU3ds3.jpg",
       overview:
@@ -91,6 +101,7 @@ let films = [
    },
    {
       id: "920",
+      reting: 0.4,
       title: "Cars",
       poster: "https://image.tmdb.org/t/p/w500/qa6HCwP4Z15l3hpsASz3auugEW6.jpg",
       overview:
@@ -100,6 +111,7 @@ let films = [
    },
    {
       id: "299534",
+      reting: 0.8,
       title: "Avengers: Endgame",
       poster: "https://image.tmdb.org/t/p/w500/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg",
       overview:
@@ -109,6 +121,7 @@ let films = [
    },
    {
       id: "324857",
+      reting: 0.6,
       title: "Spider-Man: Into the Spider-Verse",
       poster: "https://image.tmdb.org/t/p/w500/iiZZdoQBEYBv6id8su7ImL0oCbD.jpg",
       overview:
@@ -118,6 +131,7 @@ let films = [
    },
    {
       id: "157433",
+      reting: 0.5,
       title: "Pet Sematary",
       poster: "https://image.tmdb.org/t/p/w500/7SPhr7Qj39vbnfF9O2qHRYaKHAL.jpg",
       overview:
@@ -127,6 +141,7 @@ let films = [
    },
    {
       id: "456740",
+      reting: 0.6,
       title: "Hellboy",
       poster: "https://image.tmdb.org/t/p/w500/bk8LyaMqUtaQ9hUShuvFznQYQKR.jpg",
       overview:
@@ -136,6 +151,7 @@ let films = [
    },
    {
       id: "537915",
+      reting: 0.7,
       title: "After",
       poster: "https://image.tmdb.org/t/p/w500/bk8LyaMqUtaQ9hUShuvFznQYQKR.jpg",
       overview:
@@ -145,6 +161,7 @@ let films = [
    },
    {
       id: "485811",
+      reting: 0.6,
       title: "Redcon-1",
       poster: "https://image.tmdb.org/t/p/w500/vVPrWngVJ2cfYAncBedQty69Dlf.jpg",
       overview:
@@ -154,6 +171,7 @@ let films = [
    },
    {
       id: "471507",
+      reting: 0.3,
       title: "Destroyer",
       poster: "https://image.tmdb.org/t/p/w500/sHw9gTdo43nJL82py0oaROkXXNr.jpg",
       overview:
@@ -163,6 +181,7 @@ let films = [
    },
    {
       id: "400650",
+      reting: 0.7,
       title: "Mary Poppins Returns",
       poster: "https://image.tmdb.org/t/p/w500/uTVGku4LibMGyKgQvjBtv3OYfAX.jpg",
       overview:
@@ -172,6 +191,7 @@ let films = [
    },
    {
       id: "297802",
+      reting: 0.4,
       title: "Aquaman",
       poster: "https://image.tmdb.org/t/p/w500/5Kg76ldv7VxeX9YlcQXiowHgdX6.jpg",
       overview:
@@ -181,6 +201,7 @@ let films = [
    },
    {
       id: "512196",
+      reting: 0.6,
       title: "Happy Death Day 2U",
       poster: "https://image.tmdb.org/t/p/w500/4tdnePOkOOzwuGPEOAHp8UA4vqx.jpg",
       overview:
@@ -190,6 +211,7 @@ let films = [
    },
    {
       id: "390634",
+      reting: 0.9,
       title: "Fate/stay night: Heaven’s Feel II. lost butterfly",
       poster: "https://image.tmdb.org/t/p/w500/nInpnGCjhzVhsASIUAmgM1QIhYM.jpg",
       overview:
@@ -199,6 +221,7 @@ let films = [
    },
    {
       id: "500682",
+      reting: 0.5,
       title: "The Highwaymen",
       poster: "https://image.tmdb.org/t/p/w500/4bRYg4l12yDuJvAfqvUOPnBrxno.jpg",
       overview:
@@ -208,6 +231,7 @@ let films = [
    },
    {
       id: "454294",
+      reting: 0.9,
       title: "The Kid Who Would Be King",
       poster: "https://image.tmdb.org/t/p/w500/kBuvLX6zynQP0sjyqbXV4jNaZ4E.jpg",
       overview:
@@ -217,6 +241,7 @@ let films = [
    },
    {
       id: "543103",
+      reting: 0.5,
       title: "Kamen Rider Heisei Generations FOREVER",
       poster: "https://image.tmdb.org/t/p/w500/kHMuyjlvNIwhCaDFiRwnl45wF7z.jpg",
       overview:
@@ -226,6 +251,7 @@ let films = [
    },
    {
       id: "404368",
+      reting: 0.9,
       title: "Ralph Breaks the Internet",
       poster: "https://image.tmdb.org/t/p/w500/qEnH5meR381iMpmCumAIMswcQw2.jpg",
       overview:
@@ -235,6 +261,7 @@ let films = [
    },
    {
       id: "338952",
+      reting: 1.5,
       title: "Fantastic Beasts: The Crimes of Grindelwald",
       poster: "https://image.tmdb.org/t/p/w500/fMMrl8fD9gRCFJvsx0SuFwkEOop.jpg",
       overview:
@@ -244,6 +271,7 @@ let films = [
    },
    {
       id: "399579",
+      reting: 1.7,
       title: "Alita: Battle Angel",
       poster: "https://image.tmdb.org/t/p/w500/xRWht48C2V8XNfzvPehyClOvDni.jpg",
       overview:
@@ -253,6 +281,7 @@ let films = [
    },
    {
       id: "450001",
+      reting: 0.8,
       title: "Master Z: Ip Man Legacy",
       poster: "https://image.tmdb.org/t/p/w500/6VxEvOF7QDovsG6ro9OVyjH07LF.jpg",
       overview:
@@ -262,6 +291,7 @@ let films = [
    },
    {
       id: "504172",
+      reting: 0.2,
       title: "The Mule",
       poster: "https://image.tmdb.org/t/p/w500/klazQbxk3yfuZ8JcfO9jdKOZQJ7.jpg",
       overview:
@@ -271,6 +301,7 @@ let films = [
    },
    {
       id: "527729",
+      reting: 0.6,
       title: "Asterix: The Secret of the Magic Potion",
       poster: "https://image.tmdb.org/t/p/w500/wmMq5ypRNJbWpdhC9aPjpdx1MMp.jpg",
       overview:
@@ -280,6 +311,7 @@ let films = [
    },
    {
       id: "118340",
+      reting: 0.8,
       title: "Guardians of the Galaxy",
       poster: "https://image.tmdb.org/t/p/w500/r7vmZjiyZw9rpJMQJdXpjgiCOk9.jpg",
       overview:
@@ -289,6 +321,7 @@ let films = [
    },
    {
       id: "411728",
+      reting: 0.5,
       title: "The Professor and the Madman",
       poster: "https://image.tmdb.org/t/p/w500/gtGCDLhfjW96qVarwctnuTpGOtD.jpg",
       overview:
@@ -298,6 +331,7 @@ let films = [
    },
    {
       id: "527641",
+      reting: 0.0,
       title: "Five Feet Apart",
       poster: "https://image.tmdb.org/t/p/w500/kreTuJBkUjVWePRfhHZuYfhNE1T.jpg",
       overview:
@@ -307,6 +341,7 @@ let films = [
    },
    {
       id: "576071",
+      reting: 0.5,
       title: "Unplanned",
       poster: "https://image.tmdb.org/t/p/w500/tvCtAz8z5tF49a7q9RRHvxiTjzv.jpg",
       overview:
@@ -316,6 +351,7 @@ let films = [
    },
    {
       id: "283995",
+      reting: 0.3,
       title: "Guardians of the Galaxy Vol. 2",
       poster: "https://image.tmdb.org/t/p/w500/y4MBh0EjBlMuOzv9axM4qJlmhzz.jpg",
       overview:
@@ -325,6 +361,7 @@ let films = [
    },
    {
       id: "464504",
+      reting: 0.9,
       title: "A Madea Family Funeral",
       poster: "https://image.tmdb.org/t/p/w500/sFvOTUlZrIxCLdmz1fC16wK0lme.jpg",
       overview:
@@ -334,6 +371,7 @@ let films = [
    },
    {
       id: "428078",
+      reting: 0.4,
       title: "Mortal Engines",
       poster: "https://image.tmdb.org/t/p/w500/gLhYg9NIvIPKVRTtvzCWnp1qJWG.jpg",
       overview:
@@ -343,6 +381,7 @@ let films = [
    },
    {
       id: "460539",
+      reting: 0.9,
       title: "Kuppathu Raja",
       poster: "https://image.tmdb.org/t/p/w500/wzLde7keWQqWA0CJYVz0X5RVKjd.jpg",
       overview:
@@ -352,6 +391,7 @@ let films = [
    },
    {
       id: "24428",
+      reting: 0.6,
       title: "The Avengers",
       poster: "https://image.tmdb.org/t/p/w500/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg",
       overview:
@@ -361,6 +401,7 @@ let films = [
    },
    {
       id: "120",
+      reting: 1.5,
       title: "The Lord of the Rings: The Fellowship of the Ring",
       poster: "https://image.tmdb.org/t/p/w500/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg",
       overview:
@@ -370,6 +411,7 @@ let films = [
    },
    {
       id: "671",
+      reting: 0.7,
       title: "Harry Potter and the Philosopher's Stone",
       poster: "https://image.tmdb.org/t/p/w500/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg",
       overview:
@@ -379,6 +421,7 @@ let films = [
    },
    {
       id: "500904",
+      reting: 2.4,
       title: "A Vigilante",
       poster: "https://image.tmdb.org/t/p/w500/x5MSMGVagNINIWyZaxdjLarTDM3.jpg",
       overview: "A vigilante helps victims escape their domestic abusers.",
@@ -387,6 +430,7 @@ let films = [
    },
    {
       id: "284053",
+      reting: 4.5,
       title: "Thor: Ragnarok",
       poster: "https://image.tmdb.org/t/p/w500/rzRwTcFvttcN1ZpX2xv4j3tSdJu.jpg",
       overview:
@@ -396,6 +440,7 @@ let films = [
    },
    {
       id: "424694",
+      reting: 0.5,
       title: "Bohemian Rhapsody",
       poster: "https://image.tmdb.org/t/p/w500/lHu1wtNaczFPGFDTrjCSzeLPTKN.jpg",
       overview:
