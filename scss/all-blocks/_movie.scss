@@ -167,6 +167,14 @@
           background-size: 18px;
      }
 
+     .bookmark:hover {
+          background-color: rgba(19, 23, 32, 0.3);
+     }
+
+     .bookmark:active {
+          background-color: #131720;
+     }
+
      .rating {
           // padding-left: 20px;
           top: 13px;
@@ -199,7 +207,38 @@
           transform: translate(-50%, -50%) scale(var(--scale));
      }
 
-     .movie__card:hover :is(.bookmark, .rating, .play) {
+     .play:hover {
+          opacity: 0.6;
+     }
+
+     .play:active {
+          opacity: 0.3;
+     }
+
+     .film-info {
+          position: absolute;
+          right: 13px;
+          bottom: 10px;
+          width: 28px;
+          height: 28px;
+          border-radius: 5px;
+          background-color: #131720;
+          background-image: url('../../img/book-outline\ .svg');
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: 18px;
+          transform: scale(var(--scale));
+     }
+
+     .film-info:hover {
+          background-color: rgba(19, 23, 32, 0.3);
+     }
+
+     .film-info:active {
+          background-color: #131720;
+     }
+
+     .movie__card:hover :is(.bookmark, .rating, .play, .film-info) {
           --scale: 1;
      }
 

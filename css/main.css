@@ -814,6 +814,14 @@ button {
   background-size: 18px;
 }
 
+.movie .bookmark:hover {
+  background-color: rgba(19, 23, 32, 0.3);
+}
+
+.movie .bookmark:active {
+  background-color: #131720;
+}
+
 .movie .rating {
   top: 13px;
   right: 13px;
@@ -846,7 +854,39 @@ button {
           transform: translate(-50%, -50%) scale(var(--scale));
 }
 
-.movie .movie__card:hover :is(.bookmark, .rating, .play) {
+.movie .play:hover {
+  opacity: 0.6;
+}
+
+.movie .play:active {
+  opacity: 0.3;
+}
+
+.movie .film-info {
+  position: absolute;
+  right: 13px;
+  bottom: 10px;
+  width: 28px;
+  height: 28px;
+  border-radius: 5px;
+  background-color: #131720;
+  background-image: url("../../img/book-outline .svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 18px;
+  -webkit-transform: scale(var(--scale));
+          transform: scale(var(--scale));
+}
+
+.movie .film-info:hover {
+  background-color: rgba(19, 23, 32, 0.3);
+}
+
+.movie .film-info:active {
+  background-color: #131720;
+}
+
+.movie .movie__card:hover :is(.bookmark, .rating, .play, .film-info) {
   --scale: 1;
 }
 
@@ -862,5 +902,89 @@ button {
 .movie .movie__card-info {
   width: 50px;
   color: rgba(255, 255, 255, 0.4);
+}
+
+.hidden {
+  display: none;
+}
+
+.movie__over {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  z-index: 15;
+}
+
+.movie__panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 15;
+  padding: 30px;
+  width: 700px;
+  min-height: 350px;
+  border-radius: 15px;
+  background-color: #0a0c10;
+}
+
+.movie__panel-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  background-image: url("../../img/close_icon 1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.movie__panel-btn:hover {
+  opacity: 0.8;
+}
+
+.movie__panel-btn:active {
+  opacity: 0.6;
+}
+
+.movie__panel-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.movie-header {
+  color: #fff;
+}
+
+.movie-info {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  z-index: 13;
 }
 /*# sourceMappingURL=main.css.map */
