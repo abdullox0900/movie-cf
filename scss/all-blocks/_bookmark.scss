@@ -1,0 +1,84 @@
+.bookmar__modal {
+     position: fixed;
+     top: 0px;
+     left: 0px;
+     width: 100%;
+     height: 100vh;
+     z-index: 15;
+
+     .bookmark__panel {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 1110px;
+
+          transform: translate(-50%, -50%);
+          z-index: 15;
+     }
+
+     .bookmark__overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.6);
+          backdrop-filter: blur(3px);
+          z-index: 13;
+     }
+
+     .bookmark__list {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+          gap: 20px;
+          margin-bottom: 60px;
+          margin: 0px;
+          padding: 30px;
+          overflow: auto;
+          max-height: 500px;
+          border-radius: 15px;
+          background-color: hsl(220, 25%, 5%);
+          list-style: none;
+     }
+
+     .bookmark__item {
+          width: 160px;
+     }
+
+     // .bookmark__item + .bookmark__item {
+     //      margin: 10px;
+     // }
+
+     .bookmark__img {
+          width: 160px;
+          height: 250px;
+          border-radius: 15px;
+     }
+
+     .bookmark__header {
+          margin: 0;
+          text-align: center;
+          color: #fff;
+     }
+
+     .bookmark__delit-btn {
+          position: relative;
+          top: 0px;
+          cursor: pointer;
+     }
+
+     .bookmark__delit-btn:hover {
+          top: -4px;
+     }
+
+     .bookmark__delit-btn::before {
+          position: absolute;
+          top: -5px;
+          left: 62px;
+          content: '';
+          width: 25px;
+          height: 25px;
+          background-image: url('../../img/trash-outline.svg');
+          background-size: contain;
+     }
+}

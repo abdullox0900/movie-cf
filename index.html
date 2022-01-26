@@ -12,7 +12,6 @@
 
 <body>
 
-
     <!-- HEADER -->
     <header class="header">
         <div class="container header__box">
@@ -26,7 +25,7 @@
                 <nav class="header__nav">
                     <ul class="header__list">
                         <li class="header__item">
-                            <a class="header__link" href="#">Home</a>
+                            <a class="header__link" href="index.html">Home</a>
                         </li>
                         <li class="header__item">
                             <a class="header__link" href="#">Category</a>
@@ -38,6 +37,11 @@
                 </nav>
 
             </div>
+
+            <button class="header__bookmark">
+                <img src="./img/bookmarks-outline.svg" alt="bookmarks" width="20" height="20">
+                <span class="bookmark__length">0</span>
+            </button>
 
             <a class="header__sing header__link" href="#">Sing in</a>
 
@@ -109,7 +113,7 @@
                                     height="250">
 
                                 <div class="movie__card-overlay">
-                                    <div class="bookmark"></div>
+                                    <button class="bookmark"></button>
                                     <div class="rating">
                                         <span class="movie__rating">0.9</span>
                                     </div>
@@ -149,6 +153,23 @@
 
         </section>
 
+        <div class="bookmar__modal">
+            <div class="bookmark__panel">
+                <ul class="bookmark__list">
+                    <li class="bookmark__item">
+                        <img class="bookmark__img" src="./img/endgame.jpg" alt="" width="160" height="250">
+                        <div class="bookmark__box">
+                            <h3 class="bookmark__header">Avenger</h3>
+                            <button class="bookmark__delit-btn">
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bookmark__overlay"></div>
+        </div>
+
     </main>
 
     <!-- FOOTER -->
@@ -156,8 +177,6 @@
     <!-- JAVASCRIPT -->
     <script src="./js/films.js"></script>
     <script src="./js/script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 
