@@ -28,18 +28,19 @@
                             <a class="header__link" href="index.html">Home</a>
                         </li>
                         <li class="header__item">
-                            <a class="header__link" href="#">Category</a>
+                            <a class="header__link" href="#category">Category</a>
                         </li>
                         <li class="header__item">
-                            <a class="header__link" href="#">Live</a>
+                            <a class="header__link" href="#live">Live</a>
                         </li>
                     </ul>
                 </nav>
 
             </div>
 
-            <button class="header__bookmark">
-                <img src="./img/bookmarks-outline.svg" alt="bookmarks" width="20" height="20">
+            <button class="header__bookmark-btn">
+                <img class="header__bookmark-img" src="./img/bookmarks-outline.svg" alt="bookmarks" width="20"
+                    height="20">
                 <span class="bookmark__length">0</span>
             </button>
 
@@ -69,7 +70,6 @@
         </section>
 
         <!-- MOVIE -->
-
         <section class="movie">
             <div class="container">
 
@@ -130,45 +130,108 @@
                         </div>
                     </li>
                 </ul>
-
-
-                <!-- <div class="movie__over">
-                    <div class="movie__panel">
-                        <button class="movie__panel-btn"></button>
-                        <img class="movie__panel-img" src="./img/John-Wick-3.jpg" alt="" width="350" height="350">
-                        <h2 class="movie-header">Captain Marvel</h2>
-                        <p class="movie-info">
-                            The story follows Carol Danvers as she becomes one of the universe’s most powerful heroes
-                            when Earth is caught in the middle of a galactic war between two alien races. Set in the
-                            1990s, Captain Marvel is an all-new adventure from a previously unseen period in the history
-                            of the Marvel Cinematic Universe.
-                        </p>
-                    </div>
-                    <div class="overlay"></div>
-                </div> -->
-
-
-
             </div>
+            <div class="bookmar__modal">
+                <div class="bookmark__panel">
+                    <ul class="bookmark__list">
+                    </ul>
+                </div>
 
+                <div class="bookmark__overlay"></div>
+            </div>
         </section>
 
-        <div class="bookmar__modal">
-            <div class="bookmark__panel">
-                <ul class="bookmark__list">
-                    <li class="bookmark__item">
-                        <img class="bookmark__img" src="./img/endgame.jpg" alt="" width="160" height="250">
-                        <div class="bookmark__box">
-                            <h3 class="bookmark__header">Avenger</h3>
-                            <button class="bookmark__delit-btn">
-                            </button>
+        <!-- CATEGORY -->
+        <section class="category" id="category">
+            <div class="container">
+                <h2 class="category__title">Category</h2>
+
+                <ul class="category__list">
+                    <li class="category__item">
+                        <img class="category__img" src="./img/action.jpg" alt="action" width="225" height="150">
+                        <div class="name">Action</div>
+                        <div class="total">100</div>
+                    </li>
+                    <li class="category__item">
+                        <img class="category__img" src="./img/comedy.jpg" alt="comedi" width="225" height="150">
+                        <div class="name">Comedy</div>
+                        <div class="total">50</div>
+                    </li>
+                    <li class="category__item">
+                        <img class="category__img" src="./img/thriller.webp" alt="thriller" width="225" height="150">
+                        <div class="name">Thriller</div>
+                        <div class="total">27</div>
+                    </li>
+                    <li class="category__item">
+                        <img class="category__img" src="./img/horror.jpg" alt="horror" width="225" height="150">
+                        <div class="name">Horror</div>
+                        <div class="total">80</div>
+                    </li>
+                    <li class="category__item">
+                        <img class="category__img" src="./img/adventure.jpg" alt="adventure" width="225" height="150">
+                        <div class="name">Adventure</div>
+                        <div class="total">100</div>
+                    </li>
+                    <li class="category__item">
+                        <img class="category__img" src="./img/animated.jpg" alt="animated" width="225" height="150">
+                        <div class="name">Animated</div>
+                        <div class="total">86</div>
+                    </li>
+                    <li class="category__item">
+                        <img class="category__img" src="./img/crime.jpg" alt="crime" width="225" height="150">
+                        <div class="name">Crime</div>
+                        <div class="total">24</div>
+                    </li>
+                    <li class="category__item">
+                        <img class="category__img" src="./img/sci-fi.jpg" alt="sci" width="225" height="150">
+                        <div class="name">SCI-FI</div>
+                        <div class="total">84</div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- LIVE -->
+        <section class="live" id="live">
+            <div class="container">
+
+                <h2 class="live__title">Live Tv Shows</h2>
+
+                <ul class="live__list">
+                    <li class="live__item">
+                        <div class="live-card__header">
+                            <img class="live-card__img" src="./img/spider-man-no-way-home.jpg" alt="" width="350"
+                                height="250">
+                            <div class="live-card__badge">LIVE</div>
+                            <div class="live-card__viewers">305K viewers</div>
+                        </div>
+                        <div class="live-card__body">
+                            <h3 class="live-card__title">Spider-man-no-way-home</h3>
+                        </div>
+                    </li>
+                    <li class="live__item">
+                        <div class="live-card__header">
+                            <img class="live-card__img" src="./img/endgame.jpg" alt="endgame" width="350" height="250">
+                            <div class="live-card__badge">LIVE</div>
+                            <div class="live-card__viewers">2.4M viewers</div>
+                        </div>
+                        <div class="live-card__body">
+                            <h3 class="live-card__title">Endgame</h3>
+                        </div>
+                    </li>
+                    <li class="live__item">
+                        <div class="live-card__header">
+                            <img class="live-card__img" src="./img/got.jpg" alt="got" width="350" height="250">
+                            <div class="live-card__badge">LIVE</div>
+                            <div class="live-card__viewers">1.4M viewers</div>
+                        </div>
+                        <div class="live-card__body">
+                            <h3 class="live-card__title">Game of Thrones</h3>
                         </div>
                     </li>
                 </ul>
             </div>
-
-            <div class="bookmark__overlay"></div>
-        </div>
+        </section>
 
     </main>
 

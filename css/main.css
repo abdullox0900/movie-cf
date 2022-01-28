@@ -414,6 +414,11 @@ img {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 input,
@@ -451,6 +456,7 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 
 .header .header__box-left {
@@ -530,28 +536,37 @@ button {
   background-size: contain;
 }
 
-.header .header__bookmark {
+.header .header__bookmark-btn {
   position: absolute;
-  right: 225px;
+  top: 10px;
+  right: 130px;
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
 }
 
-.header .header__bookmark::after {
+.header .header__bookmark-img {
+  width: 23px;
+  height: 23px;
+}
+
+.header .header__bookmark-btn::after {
   position: absolute;
-  top: -3px;
+  top: -5px;
   right: -4px;
   content: '';
-  width: 12px;
-  height: 12px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   background-color: #1e90ff;
 }
 
 .header .bookmark__length {
   position: absolute;
-  top: -4px;
+  top: -6px;
   right: -1px;
-  font-size: 10px;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: 700;
   color: #fa0000;
   z-index: 1;
 }
@@ -834,6 +849,7 @@ button {
   left: 13px;
   width: 28px;
   height: 28px;
+  cursor: pointer;
   background-color: #131720;
   background-image: url("../../img/bookmark1-outline.svg");
   background-position: center center;
@@ -1097,5 +1113,155 @@ button {
   height: 25px;
   background-image: url("../../img/trash-outline.svg");
   background-size: contain;
+}
+
+.category {
+  margin: 70px 0px 70px 0px;
+}
+
+.category .category__title {
+  margin: 0;
+  margin-bottom: 65px;
+  font-size: 35px;
+  color: #fff;
+  text-align: center;
+}
+
+.category .category__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.category .category__item {
+  position: relative;
+  height: 150px;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.category .category__item:hover .category__img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.category .category__item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, transparent), to(#000a));
+  background: linear-gradient(180deg, transparent 20%, #000a);
+}
+
+.category .category__item .name,
+.category .category__item .total {
+  position: absolute;
+  bottom: 20px;
+  color: var(--white);
+  z-index: 20;
+}
+
+.category .name {
+  left: 20px;
+  font-size: 20px;
+}
+
+.category .total {
+  right: 20px;
+  font-size: 18px;
+  background: var(--oxford-blue-50);
+  padding: 5px 8px;
+  border-radius: 8px;
+}
+
+.live .live__title {
+  margin: 0;
+  margin-bottom: 65px;
+  font-size: 35px;
+  color: #fff;
+  text-align: center;
+}
+
+.live .live__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.live .live__item {
+  width: 350px;
+  cursor: pointer;
+}
+
+.live .live__item:hover .live-card__img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.live .live-card__header {
+  position: relative;
+  width: 350px;
+  height: 250px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.live .live-card__header::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, transparent), to(#000a));
+  background: linear-gradient(180deg, transparent 20%, #000a);
+}
+
+.live .live-card__img {
+  width: 350px;
+  height: 250px;
+}
+
+.live .live__item .live-card__badge,
+.live .live__item .live-card__viewers {
+  position: absolute;
+  left: 30px;
+  color: #fff;
+  border-radius: 10px;
+  padding: 5px 10px;
+  z-index: 10;
+}
+
+.live .live-card__badge {
+  top: 30px;
+  font-size: 12px;
+  font-weight: 500;
+  background: #eb5656;
+}
+
+.live .live-card__viewers {
+  bottom: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  background: #162032;
+}
+
+.live .live-card__title {
+  margin: 0;
+  color: #fff;
+  font-size: 25px;
+}
+
+.live .live__item:hover .live-card__title {
+  color: #3182ed;
 }
 /*# sourceMappingURL=main.css.map */

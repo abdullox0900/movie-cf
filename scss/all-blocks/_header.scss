@@ -5,6 +5,7 @@
           display: flex;
           align-items: center;
           justify-content: space-between;
+          position: relative;
      }
 
      .header__box-left {
@@ -76,29 +77,38 @@
           background-size: contain;
      }
 
-     .header__bookmark {
+     .header__bookmark-btn {
           position: absolute;
-          right: 225px;
+          top: 10px;
+          right: 130px;
+          padding: 0;
+          cursor: pointer;
+          background-color: transparent;
      }
 
-     .header__bookmark::after {
+     .header__bookmark-img {
+          width: 23px;
+          height: 23px;
+     }
+
+     .header__bookmark-btn::after {
           position: absolute;
-          top: -3px;
+          top: -5px;
           right: -4px;
           content: '';
-          width: 12px;
-          height: 12px;
+          width: 15px;
+          height: 15px;
           border-radius: 50%;
           background-color: #1e90ff;
      }
 
      .bookmark__length {
           position: absolute;
-          top: -4px;
+          top: -6px;
           right: -1px;
-          font-size: 10px;
-          font-weight: 600;
-          color: rgb(250, 0, 0);
+          font-size: 12px;
+          font-weight: 700;
+          color: #fa0000;
           z-index: 1;
      }
 }
